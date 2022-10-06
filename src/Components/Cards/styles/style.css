@@ -1,0 +1,142 @@
+.poker-card {
+    box-shadow: inset 2px 2px 0 #fff, inset -2px -2px 0 #fff;
+    transform-style: preserve-3d;
+    height: 78px;
+    width: 58px;
+    border-radius:5px;
+    display:inline-block;
+    position:relative;
+    background-color:white;
+    top: -3px;
+    left: -2px;
+    backface-visibility: hidden;
+    border:1px solid black;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.design{
+    border:1mm solid rgb(16, 13, 13);
+    width:51.5mm;
+    height:76.8mm;
+    background-color: #696262;
+}
+.poker-card.hidden-card {
+    z-index: 0;
+    top: -76px;
+    width: 66px;
+    height: 84px;
+}
+.poker-card.hidden-card.v1 {
+    transform: rotate(353deg);
+}
+
+.poker-card.hidden-card.v2 {
+    width: 69px;
+    height: 88px;
+    transform: rotate(10deg) translateX(42%) translateY(-108%);
+}
+
+.poker-card:after {
+    backface-visibility: hidden;
+    position:absolute;
+    content:'';
+    background-repeat:no-repeat;
+    background-position:
+            bottom center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center;
+    width: 33%;
+    height: 71%;
+    top: -2%;
+    left: 8%;
+}
+.poker-card:before {
+    backface-visibility: hidden;
+    position:absolute;
+    content:'';
+    background-repeat:no-repeat;
+    background-position:
+            bottom center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center,
+            top center;
+    width: 17%;
+    height: 37%;
+    bottom: 4%;
+    right: 7%;
+    transform:rotate(0deg);
+}
+
+.poker-card.hearts:after, .poker-card.hearts:before {
+    background-image:
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#hearts'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#ace'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#king'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#queen'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#jack'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#ten'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#nine'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#eight'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#seven'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#six'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#five'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#four'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#three'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#two');
+}
+.poker-card.diamonds:after, .poker-card.diamonds:before {
+    background-image:
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#diamonds'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#ace'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#king'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#queen'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#jack'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#ten'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#nine'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#eight'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#seven'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#six'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#five'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#four'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#three'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#two');
+}
+.poker-card.spades:after, .poker-card.spades:before  {
+    filter:brightness(0);
+    background-image:
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#spades'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#ace'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#king'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#queen'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#jack'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#ten'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#nine'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#eight'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#seven'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#six'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#five'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#four'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#three'),
+            url('https://cdn.rawgit.com/jedgek/49eacfbeffbb1d69ffd1cbdbda75271f/raw/b79cc961ca287467bab1787fba54502aea02b605/deckofcards.svg#two');
+}
